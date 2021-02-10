@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">       
+    <title>Picture Transformer</title>
 </head>
 <body>
-    
+    <div>
+        <h2>Picture Transformer</h2>
+        <h3>Upload your picture and make it crazy.</h3>
+    </div>
+    <div>
+        <label for="blur">Blur:</label>
+        <input type="range" id="blur" name="blur" />
+        <label for="border-size">Border Size:</label>
+        <input type="range" id ="border-size" name="border-size" />
+        <label for="rotate">Rotate:</label>
+        <input type="range" id="rotate" name="rotate" /><br />
+        <input type="color" /><br />
+        <input type="file" />
+        <div class="image-display">
+            <img src="" id="image-file" alt="Image Preview" class="image-preview" />
+            <span class="img-display__default-text">Your image</span>
+        </div>
+        
+        <input type="button" value="Upload Image" name="upload-img" id="upload-img">
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.image-display {
+
+    /* Image preview box */
+    width: 500px;
+    min-height: 100px;
+    border: 2px solid rgb(160, 159, 159);
+    margin: 20px;
+
+    /* Default text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(160, 159, 159);
+    font-weight: bold;
+    
+}
+
+.image-preview {
+    display: none;
+    width: 100%;
+}
