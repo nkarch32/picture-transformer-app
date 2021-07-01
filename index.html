@@ -16,15 +16,16 @@
     </div>
     <div>
         <label for="blur">Blur:</label>
-        <input type="range" id="blur" name="blur" />
+        <input type="range" id="blur" name="blur" min="0" max="25" value="10" data-sizing="px" />
         <label for="border-size">Border Size:</label>
-        <input type="range" id ="border-size" name="border-size" />
+        <input type="range" id ="border-size" name="border-size" min="10" max="25" value="10" data-sizing="px" />
         <label for="rotate">Rotate:</label>
-        <input type="range" id="rotate" name="rotate" /><br />
-        <input type="color" /><br />
+        <input type="range" id="rotate" name="rotate" class="rotate" min="0" max="360" data-sizing="deg" /><br />
+        <label for="border-color">Border Color:</label>
+        <input type="color" name="border-color" value="#6182FC"/><br />
         <input type="file" id="button" />
         <div class="image-display">
-            <img src="" id="img" alt="Image Preview" class="image-preview" />
+            <img src="" id="img" alt="Image Preview" class="image-preview" width="500"/>
             <span class="img-display__default-text" id="placeholder">Your image</span>
         </div>
         

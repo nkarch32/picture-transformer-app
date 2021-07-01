@@ -1,5 +1,19 @@
+:root {
+    --border-color: #6182FC;
+    --border-size: 10px;
+    --blur: 10px;
+    /*--rotate: rotate(45deg);*/
+}
+
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+img {
+    padding: var(--border-size);
+    background: var(--border-color);
+    filter: blur(var(--blur));
+    /*transform: var(--rotate);*/
 }
 
 .image-display {
