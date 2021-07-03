@@ -12,6 +12,8 @@ inputs.forEach((input) => input.addEventListener('mousemove', handleUpdate));
 
 let img =  document.getElementById('img');
 let button = document.getElementById('button');
+let rotate = document.getElementById('rotate');
+let rotateActivate = false;
 
 button.addEventListener('change', function() {
     //check whether uploaded file is jpeg or png file type -- if not, display alert
@@ -24,8 +26,48 @@ button.addEventListener('change', function() {
         //if image is displayed, get rid of the 'your image' placeholder
         document.getElementById("placeholder").style.visibility =
           'hidden';
-        
-        
-        
     }
 })
+
+/* Allows user to rotate image */
+
+rotate.addEventListener('click', rotateImage);
+
+let rotation = 0;
+function rotateImage() {
+    rotation +=45;
+    if (rotation === 360) {
+        rotation = 0;
+    }
+
+    img.style.transform = `rotate(${rotation}deg)`;
+    img.style.margin = '100px';
+}
+
+
+
+/*
+It works, but it doesn't allow user to keep rotating beyond 4 clicks.
+
+let numberOfClicks = 0;
+function clickCounter(e) {
+    numberOfClicks++;
+    if (numberOfClicks === 1) {
+        img.style.transform = 'rotate(90deg)';
+        img.style.margin = '100px'
+    } else if (numberOfClicks === 2) {
+        img.style.transform = 'rotate(180deg)';
+        img.style.margin = '100px';
+    } else if (numberOfClicks === 3) {
+        img.style.transform = 'rotate(270deg)';
+        img.style.margin = '100px';
+    } else if (numberOfClicks === 4) {
+        img.style.transform = 'rotate(360deg)';
+        img.style.margin = '100px';
+    } else {
+        img.style.margin = '100px';
+    }
+}
+
+*/
+ 
