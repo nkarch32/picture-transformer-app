@@ -44,7 +44,18 @@ function rotateImage() {
     img.style.margin = '100px';
 }
 
+/* Download button 
 
+const downloadField = document.querySelector('img#img.image-preview');
+
+
+function downloadImage() {
+
+
+}
+
+downloadField.addEventListener = ('click', downloadImage);
+*/
 
 /*
 It works, but it doesn't allow user to keep rotating beyond 4 clicks.

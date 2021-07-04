@@ -10,26 +10,34 @@
     <title>Picture Transformer</title>
 </head>
 <body>
-    <div>
+    <div class="title">
         <h2>Picture Transformer</h2>
         <h3>Upload your picture and make it crazy.</h3>
     </div>
-    <div>
-        <label for="blur">Blur:</label>
-        <input type="range" id="blur" name="blur" min="0" max="25" value="10" data-sizing="px" />
-        <label for="border-size">Border Size:</label>
-        <input type="range" id ="border-size" name="border-size" min="10" max="25" value="10" data-sizing="px" />
-        <label for="rotate">Rotate:</label>
-        <input type="button" id="rotate" name="rotate" value="Rotate Image" class="rotate" min="0" max="360" /><br />
-        <label for="border-color">Border Color:</label>
-        <input type="color" name="border-color" value="#6182FC"/><br />
-        <input type="file" id="button" />
+    <div class="optionsAndPreview">
+        <div class="blur">
+            <label for="blur">Blur:</label>
+            <input type="range" id="blur" name="blur" min="0" max="25" value="10" data-sizing="px" /><br/>
+        </div>
+        <div class="borderSize">
+            <label for="border-size">Border Size:</label>
+            <input type="range" id ="border-size" name="border-size" min="10" max="25" value="10" data-sizing="px" /><br/>
+        </div>
+        <div class="borderColor">
+            <label for="border-color">Border Color:</label>
+            <input type="color" name="border-color" value="#6182FC"/><br />
+        </div>
+        <div class="rotateField">
+            <input type="button" id="rotate" name="rotate" value="Rotate Image" class="rotate" min="0" max="360" /><br />
+        </div>
+        
+        <div class="upload">
+            <input type="file" id="button" />
+        </div>
         <div class="image-display">
             <img src="" id="img" alt="Image Preview" class="image-preview" width="500"/>
             <span class="img-display__default-text" id="placeholder">Your image</span>
         </div>
-        
-        <input type="button" value="Download Image" name="upload-img" id="upload-img">
     </div>
     <script src="scripts.js"></script>
 </body>
