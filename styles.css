@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    background:rgb(236, 145, 145);
+    background:rgb(247, 237, 237);
 }
 
 .optionsAndPreview {
@@ -63,20 +63,16 @@ body {
 }
 
 #button {
-  background-color: green;
-  border: none;
-  color: white;
-  padding: 16px 32px;
+  border-color:black;
   text-align: center;
   font-size: 16px;
-  margin: 4px 2px;
+  
   opacity: 0.6;
   transition: 0.3s;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
   border-radius: 5%;
-  display: hidden;
 }
 
 img {
@@ -87,7 +83,7 @@ img {
 }
 
 .title {
-    margin: 10px 100px;
+    margin: 10px 100px 10px 50px;
 }
 .image-display {
 
